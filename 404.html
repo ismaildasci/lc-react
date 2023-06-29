@@ -6,7 +6,7 @@
   <title>Redirecting</title>
   <script>
     // Parse the URL path and redirect to the correct path
-    const segmentCount = 1; // Number of segments in the GitHub Pages URL (username.github.io/repo-name)
+    const segmentCount = 2; // Number of segments in the GitHub Pages URL (username.github.io/repo-name)
     const location = window.location;
     const pathSegments = location.pathname.split('/').slice(segmentCount);
     location.replace(
@@ -14,7 +14,12 @@
       '//' +
       location.hostname +
       (location.port ? ':' + location.port : '') +
-      '/' +
+      '/react-todo/' +
       pathSegments.join('/')
     );
-  </script
+  </script>
+</head>
+
+<body></body>
+
+</html>
