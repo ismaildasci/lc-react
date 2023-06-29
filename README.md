@@ -18,7 +18,7 @@ Node.js and NPM (comes with Node.js)
 
 Clone the repository to your local machine:
    ```sh
- git clone https://github.com/username/react-todo.git
+ git clone https://github.com/ismaildasci/react-todo.git
  cd react-todo
 
    ```
