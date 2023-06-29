@@ -3,9 +3,8 @@ import App from './App';
 import NavigationBar from './NavigationBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/api';
-import Contact from './pages/Issues';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+import Issues from './pages/Issues';
+import Details from './pages/Details';
 import NoMatch from './pages/NoMatch';
 
 // const basename = process.env.NODE_ENV === 'development' ? '/' : '/react-todo';
@@ -18,10 +17,9 @@ export default function Root() {
         <div className="content">
           <Routes>
             <Route path="/" element={<App />} exact />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/blog" element={<Blog />} exact />
-            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/api" element={<About />} />
+            <Route path="/issues" element={<Issues />} />
+            <Route path="/issues/:id" element={<Details />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </div>

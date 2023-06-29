@@ -10,20 +10,30 @@ export default function About() {
     <div>
       <div className="buttons">
         <button
-          className="button"
-          onClick={() => setRedditVisible(prevRedditVisible => !redditVisible)}
+          className="api-button"
+          onClick={() => setRedditVisible(!redditVisible)}
         >
-          Toggle Reddit
+          Show Reddit Content
         </button>
         <button
-          className="button"
-          onClick={() => setJokeVisible(prevJokeVisible => !jokeVisible)}
+          className="api-button"
+          onClick={() => setJokeVisible(!jokeVisible)}
         >
-          Toggle Reddit
+          Show Joke Content
         </button>
       </div>
-      {redditVisible && <Reddit />}
-      {jokeVisible && <Joke />}
+      <div className="content">
+        {redditVisible && (
+          <div className="reddit-content">
+            <Reddit />
+          </div>
+        )}
+        {jokeVisible && (
+          <div className="joke-content">
+            <Joke />
+          </div>
+        )}
+      </div>
     </div>
   );
 }
