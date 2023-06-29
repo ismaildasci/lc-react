@@ -12,7 +12,7 @@ export default function NavigationBar() {
         </li>
         <li>
           <NavLink to="/about" activeclassname="active" exact="true">
-            About
+            API
           </NavLink>
         </li>
         <li>

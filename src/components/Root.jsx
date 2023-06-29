@@ -8,7 +8,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import NoMatch from './pages/NoMatch';
 
-const basename = process.env.NODE_ENV === 'development' ? '/' : '/react-todo';
+// const basename = process.env.NODE_ENV === 'development' ? '/' : '/react-todo';
 
 export default function Root() {
   return (
