@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Reddit from './Reddit';
-import Joke from './Joke';
+import Reddit from '../api/Reddit';
+import Joke from '../api/Joke';
 
 export default function About() {
   const [redditVisible, setRedditVisible] = useState(false);
