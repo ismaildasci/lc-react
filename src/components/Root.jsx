@@ -3,7 +3,7 @@ import App from './App';
 import NavigationBar from './NavigationBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/api';
-import Contact from './pages/Contact';
+import Contact from './pages/Issues';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import NoMatch from './pages/NoMatch';
