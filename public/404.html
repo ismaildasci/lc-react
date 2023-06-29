@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Redirecting</title>
+  <script>
+    // Parse the URL path and redirect to the correct path
+    const segmentCount = 1; // Number of segments in the GitHub Pages URL (username.github.io/repo-name)
+    const location = window.location;
+    const pathSegments = location.pathname.split('/').slice(segmentCount);
+    location.replace(
+      location.protocol +
+      '//' +
+      location.hostname +
+      (location.port ? ':' + location.port : '') +
+      '/' +
+      pathSegments.join('/')
+    );
+  </script
