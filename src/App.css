@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /* animation: App-logo-spin infinite 20s linear; */
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.todo-app-container {
   min-height: 100vh;
+  padding: 10px;
+  background: #f3f4f6;
+}
+
+.todo-app {
+  margin: auto;
+  margin-top: 30px;
+  padding: 2rem;
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  max-width: 32rem;
+  color: #374151;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.todo-input {
+  width: 100%;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.todo-list {
+  margin-top: 32px;
+}
+
+.todo-item-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.todo-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 18px;
+  margin-right: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-item-label {
+  margin-left: 16px;
+}
+
+.todo-item-input {
+  margin-left: 8px;
+  width: 100%;
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 8px;
+  font-size: 18px;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.x-button {
+  background: white;
+  color: #6B7280;
+  border: none;
+  cursor: pointer;
+}
+
+.x-button:hover {
+  color: #1F2937;
+}
+
+.x-button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.button {
+  color: #6B7280;
+  font-size: 14px;
+  background: white;
+  border: 1px solid lightgray;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid lightgray;
+}
+
+.filter-button {
+  border: 1px solid white;
+}
+
+.filter-button-active {
+  border: 1px solid lightgray;
+}
+
+.check-all-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6B7280;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid lightgray;
+}
+
+.other-buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6B7280;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid lightgray;
 }
