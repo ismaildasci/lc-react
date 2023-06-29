@@ -1,7 +1,7 @@
 import React from 'react';
 import App from './App';
 import NavigationBar from './NavigationBar';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/api';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
@@ -12,7 +12,7 @@ import NoMatch from './pages/NoMatch';
 
 export default function Root() {
   return (
-    <Router basename="react-todo">
+    <Router basename="/react-todo">
       <div className="todo-app-container">
         <NavigationBar />
         <div className="content">
