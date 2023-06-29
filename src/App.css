@@ -229,3 +229,226 @@ nav ul li:not(:first-child) {
   transition: all 300ms;
   transform: translateX(20px);
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #111827;
+}
+
+a {
+  color: #0265d6;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 54rem;
+  margin: 32px auto;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.issues-heading {
+  background: #f5f8fa;
+  padding: 15px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #e1e4e8;
+  border-bottom: none;
+}
+
+.issues-heading a {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.issues-heading a:hover {
+  text-decoration: underline;
+}
+
+.issues-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e1e4e8;
+  padding: 12px 8px;
+}
+
+.issues-entry:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.issues-entry:hover {
+  background: #f5f8fa;
+}
+
+.issues-entry-title-container {
+  display: flex;
+}
+
+
+.issues-entry-title-container {
+  display: flex;
+}
+
+.issues-title {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.issues-title a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.issues-title a:hover {
+  color: #0265d6;
+}
+
+.issues-title-details {
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 8px;
+  color: #374151;
+}
+
+.comments-count-container {
+  display: flex;
+  text-decoration: none;
+  color: #374151;
+}
+
+.comments-count-container:hover {
+  color: #0265d6;
+}
+
+.comments-count {
+  text-decoration: none;
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+.open-closed-buttons {
+  margin-top: 12px;
+}
+
+.open-closed-buttons button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.open-closed-buttons button:last-child {
+  margin-left: 14px;
+}
+
+.open-closed-buttons span {
+  margin-left: 4px;
+  font-size: 14px;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.open {
+  color: #22863a;
+}
+
+.closed {
+  color: #e5534b;
+}
+
+/* Comments */
+
+.comments-container {
+  margin-top: 48px;
+}
+
+.comments-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.comments-container h2 span {
+  color: #374151;
+  font-weight: normal;
+}
+
+.issue-details {
+  font-size: 14px;
+  margin-top: 12px;
+  color: #374151;
+}
+
+.issue-details a {
+  color: #374151;
+  font-weight: bold;
+}
+
+.issue-details a:hover {
+  color: #0265d6;
+}
+
+.comment-container {
+  display: flex;
+}
+
+.comment-container:not(:first-child) {
+  margin-top: 32px;
+}
+
+.avatar {
+  width: 42px;
+  border-radius: 50%;
+}
+
+.comment {
+  margin-left: 18px;
+  flex: 1;
+  max-width: 100%;
+}
+
+.comment-heading {
+  font-size: 14px;
+  background: #f5f8fa;
+  padding: 15px 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid #e1e4e8;
+  border-bottom: none;
+}
+
+.comment-heading a {
+  color: #111827;
+  font-weight: bold;
+}
+
+.comment-heading a:hover {
+  color: #0265d6;
+  text-decoration: underline;
+}
+
+.comment-body {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #e1e4e8;
+  padding: 16px;
+  line-height: 1.5;
+}
+
+.border {
+  padding-top: 32px;
+  border-bottom: 1px solid #F3F4F6;
+}
