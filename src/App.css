@@ -158,5 +158,50 @@ h2 {
 
 .toggles-container {
   margin: 20px 0;
+}
 
+/* Transitions  */
+
+.slide-vertical-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.slide-vertical-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms;
+}
+
+.slide-vertical-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-vertical-exit-active {
+  opacity: 0;
+  transition: all 300ms;
+  transform: translateY(-20px);
+}
+
+.slide-horizontal-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.slide-horizontal-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms;
+}
+
+.slide-horizontal-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-horizontal-exit-active {
+  opacity: 0;
+  transition: all 300ms;
+  transform: translateX(20px);
 }
