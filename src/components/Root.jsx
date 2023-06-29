@@ -1,16 +1,18 @@
 import React from 'react';
 import App from './App';
 import NavigationBar from './NavigationBar';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import NoMatch from './pages/NoMatch';
 
+const basename = process.env.NODE_ENV === 'development' ? '/' : '/react-todo';
+
 export default function Root() {
   return (
-    <Router>
+    <Router basename="react-todo">
       <div className="todo-app-container">
         <NavigationBar />
         <div className="content">
